@@ -1,0 +1,50 @@
+body{
+        background-image: url("images/background.jpg");
+	}
+	#content
+		{
+			height: 600px;
+			width: 100%;
+			margin-right: 0px;
+			margin-top: 20px;
+			text-align: center;
+	}
+	.btn{
+		height: 50px; 
+		width: 150px; 
+		background-color: #0c9fc6;
+		border-radius: 10px; 
+		color : white;
+	}
+	.btn:hover{
+		box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+        cursor:pointer;
+		background-color: #82d1f8
+	}
+	input{
+		background: none;
+		font-size: 13px;
+        border-color: #0c9fc9; 
+        padding: 7px;
+        border-radius: 10px;
+	}
+	input[type=button]:hover{
+       box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+    }
+	::placeholder {
+        color: #0c9fc6;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: #0c9fc6;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color: #0c9fc6;
+    }
+    ::-webkit-input-placeholder 
+	{
+		color: #0c9fc6;
+	}
