@@ -1,25 +1,22 @@
 body{
     background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    
 }
 #tab{
 	background-color: #0c9fc6;
 	margin-top: 10px;
-	margin-left: 20px;
 	height: 70px;
-	width: fill;
     box-shadow: 1.5px 1.5px 2px grey;
 }
 ul{
 	list-style-type: none;
 	display: inline-flex;
+	float: right;
 	margin-before: 1em;
 	margin-after: 1em;
 	margin-start: 0;
 	margin-end: 0;
 	padding-start: 40px;
-	padding: 0px;
 }
 li{
 	background-color: #0c9fc6; 
@@ -32,10 +29,6 @@ li{
     height: 70px; 
     width: 300px;
     color: white;
-}
-li:hover{
-    background-color: #82d1f8;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
 }
 #tab1{
 	background-color: #3a8ba2;
@@ -53,10 +46,9 @@ li:hover{
 	background-position: 30% 50%;
 	background-image: url("images/request.png");
 }
-#tab4{ 
-	text-indent: 45%;
-	background-position: 35% 50%;
-	background-image: url("images/delete.png");
+li:hover{
+    background-color: #82d1f8;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
 }
 .AddDiv{
 	width: 300px;
@@ -96,16 +88,17 @@ li:hover{
 	color: white;
 }
 #btnAdd{
-	background-color: #0c9fc6;
-	margin-top: 20px; 
+	height: 50px; 
+	width: 100px; 
+	background-color: #0c9fc6; 
+	font-size: 20px;   
 	border: none; 
 	border-radius:10px; 
 	color:white;
 	cursor: pointer;
-	height: 50px; 
-	width: 100px; 
+    margin-top: 20px;
 }
-input[type=button]:hover
+#btnAdd:hover
 {
     background-color: #82d1f8;
 	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 10px 10px 0 rgba(0,0,0,0.19);
