@@ -4,33 +4,24 @@
 	<meta charset="utf-8">
 	<title>Login</title>
     <link rel="stylesheet" type="text/css" href="login.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
 <script src="login.js"></script>
 
 <body onload="myFunction()">
-	<div id="content" class="container">
-		<div class="row">
-			<input type="button" class="btn" value="Back" onclick="window.location.href='index.html';" style="float: left; margin-left: 10px; background-repeat: no-repeat; background-size: 40px; border: none; cursor: pointer; font-size: 20px; line-height: 30px; 
-					background-position: 20% 50%; background-image: url('images/back.png'); text-indent: 25%;">
-			<center>
-				<img src="images/logo.png" style="height: 300px; width: 450px; margin-top: 50px; border-radius: 50%" id ="img"
-					class="img-responsive">
-			</center>
-				<br>
-			<center><div style="width: 300px;">
-				<input type="text" id="username" placeholder=" enter your username......." onclick="user()" class="col-xs-12">
-				<br><br>
-				<input type="password" id="password" placeholder=" enter your password......." onclick="pass()" class="col-xs-12">
-				<br><br><br>
-			</div></center>
-			<input type="button" class="btn" value="Login" onclick="login()">
-            <input type="button" class="btn" value="New Organization" onclick="window.location.href='addOrganization.html';">
+	<div class="content">
+		<img src="images/logo.png" style="height: 300px; width: 450px; margin-top: 50px;">
+		<div id="loginDiv">
+                <input type="text" id="username" placeholder=" enter your username......." onclick="user()">
+			<br><br>
+			<input type="password" id="password" placeholder=" enter your password......." onclick="pass()">
+			<br><br><br>
+			<input type="button" id="login" value="Login" onclick="login()" style="height: 50px; width: 100px; background-color: #0c9fc6;
+					border-radius: 10px; margin-left: 35%;color : white;">
+            <br><br>
+            <input type="button" id="back" value="Back" onclick="back()" style="height: 50px; width: 100px; background-color: #0c9fc6;
+					border-radius: 10px; margin-left: 35%;color : white;">
 		</div>
 	</div>
 </body>

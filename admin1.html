@@ -9,59 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-    <script src="admin1.js"></script>
-    <script>
-            window.onload = function () 
-            {
-                var fileupload = document.getElementById("FileUpload1");
-                var filePath = document.getElementById("spnFilePath");
-                var image = document.getElementById("img");
-                image.onclick = function () 
-                {
-                    fileupload.click();
-                };
-                fileupload.onchange = function () 
-                {
-                    var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
-                    var x = document.createElement("IMG");
-
-                    if (input.files && input.files[0]) 
-                    {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) 
-                        {
-                            $('#img')
-                            .attr('src', e.target.result)
-                            .width(150)
-                            .height(200);
-                        };
-
-                        reader.readAsDataURL(input.files[0]);
-                    }
-                };
-            };
-       </script>
+    <script src="admin1.js">
+    </script>
 </head>
 <body onload="myFunction()">
-<div style="display: inline-flex; margin-left: 20px;">
-    <a href="index.html" style="text-decoration: none;"><img src="images/home.png" height="70px" width="100px" style="margin-top: 10px"></a>
 	<div id="tab">
 		<ul id="ulTabs">
 			<a href="admin1.html" style="text-decoration: none;"><li id="tab1">Add Driver</li></a>
 			<a href="tracking.html" style="text-decoration: none;"><li id="tab2">Tracking</li></a>
 			<a href="request.html" style="text-decoration: none;"><li id="tab3">Request</li></a>
-            <a href="delete.html" style="text-decoration: none;"><li id="tab4">Delete</li></a>
 		</ul>
 	</div>
-</div>
 	<br><br>
 	<div id="AddDiv">
         <form> 
             <div>
-                <img src="images/sign.png" style="cursor: pointer; height: 200px; width: 200px; border-radius: 50%; margin-top: 0px;"id="img"  alt="Select File" title="Select File">
-                <span id="spnFilePath"></span>
-                <input type="image" id="FileUpload1" style="display: none" />
+                <input type="file" id="FileUpload1" class="AddDiv" hidden="hidden" />
+                <img src="images/sign.png" style="cursor: pointer; height: 200px; width: 200px; border-radius: 50%; margin-top: 0px;" id="OrgImage" alt="Select File" title="Select File">
             </div>
                 <input type="text" class="AddDiv" placeholder="Enter Your Name"  id ="name" color="white" onclick="text_check()" required>
                 <br><br>

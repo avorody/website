@@ -13,29 +13,25 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlffdIctRJkGHINS3tMZ3pAbwZN4trFBw&callback=myMap"></script>
 </head>
 <body onload="myFunction()">
-<div style="display: inline-flex; margin-left: 20px;">
-    <a href="index.html" style="text-decoration: none;"><img src="images/home.png" height="70px" width="100px" style="margin-top: 10px"></a>
-	<div id="tab">
+	<div id="tab" class="container-fluid">
 		<ul>
 			<a href="admin1.html" style="text-decoration: none;"><li id="tab1" class="tabList">Add Driver</li></a>
 			<a href="tracking.html" style="text-decoration: none;"><li id="tab2" class="tabList">Tracking</li></a>
 			<a href="request.html" style="text-decoration: none;"><li id="tab3" class="tabList">Request</li></a>
-            <a href="delete.html" style="text-decoration: none;"><li id="tab4" class="tabList">Delete</li></a>
 		</ul>
 	</div>
-</div>
 	<br><br>
 	<div class="container-fluid">
 		<div id="content" style="text-align: center; display: inline-flex;"> 
-        	<div style="height: 500px; width: 700px; border: 2px solid white; border-radius:10px;box-shadow: 1.5px 1.5px 2px grey;margin-left: 120px;" id="map"></div>
+        	<div style="height: 500px; width: 700px; border: 2px solid white; border-radius:10px;box-shadow: 1.5px 1.5px 2px grey;margin-left: 30px;" id="map"></div>
         	<div style="margin-top: 10px;">
             	<label style="font-size: 20px; margin-left: 90px;">Select Trip</label>
             	<br>
             	<select style="width: 100px; height: 50px; margin-left: 90px;" id="trips"></select>
             	<br><br>
-            	<input type="button" id="show" value="Show"  id="show" >
+            	<input type="button" class="track" value="Show"  id="show" >
                 <br>
-                <div style="display:inline-flex;" id="tripInfo">
+                <div style="display:inline-flex; margin-top:10px;" id="tripInfo">
                 	<div style="height: 200px; width: 200px; margin-left: 30px; background-color:white; text-align: center; box-shadow: 1.5px 1.5px 2px grey; border-radius:10px; margin-top: 70px; color:black; margin-top: 10px; " id="driver">
                 		<center><img class="img-responsive" src="images/sign.png" height="100px" width="100px" id="driverImage">
                         <p id="info" style="font-size: 25px; text-weight:10px; background-color:#dddddd;"></p>
